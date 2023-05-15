@@ -2,6 +2,7 @@ package manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
@@ -34,6 +35,18 @@ public class HelperUser extends HelperBase {
     public void clickSubmit()
     {
         click(By.cssSelector("[id='submit']"));
+    }
+
+    public  void ListElements()
+    {
+        WebElement nameText = wd.findElement(By.cssSelector("#name.mb-1"));
+        String name = nameText.getText();
+        WebElement mailText = wd.findElement(By.cssSelector("#email.mb-1"));
+        String mail = mailText.getText();
+        WebElement currAddress = wd.findElement(By.cssSelector("currentAddress.mb-1"));
+        String curAdd = currAddress.getText();
+        WebElement perAddress = wd.findElement(By.cssSelector("#permanentAddress.mb-1"));
+        String perAdd = perAddress.getText();
     }
 
 
