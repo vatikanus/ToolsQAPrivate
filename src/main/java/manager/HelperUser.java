@@ -37,7 +37,7 @@ public class HelperUser extends HelperBase {
         click(By.cssSelector("[id='submit']"));
     }
 
-    public  void ListElements()
+   /* public  void ListElements()
     {
         WebElement nameText = wd.findElement(By.cssSelector("#name.mb-1"));
         String name = nameText.getText();
@@ -47,7 +47,7 @@ public class HelperUser extends HelperBase {
         String curAdd = currAddress.getText();
         WebElement perAddress = wd.findElement(By.cssSelector("#permanentAddress.mb-1"));
         String perAdd = perAddress.getText();
-    }
+    }*/
 
 
 }
