@@ -37,18 +37,15 @@ public class HelperUser extends HelperBase {
         click(By.cssSelector("[id='submit']"));
     }
 
-   /* public  void ListElements()
+    public void Buttons()
     {
-        WebElement nameText = wd.findElement(By.cssSelector("#name.mb-1"));
-        String name = nameText.getText();
-        WebElement mailText = wd.findElement(By.cssSelector("#email.mb-1"));
-        String mail = mailText.getText();
-        WebElement currAddress = wd.findElement(By.cssSelector("currentAddress.mb-1"));
-        String curAdd = currAddress.getText();
-        WebElement perAddress = wd.findElement(By.cssSelector("#permanentAddress.mb-1"));
-        String perAdd = perAddress.getText();
-    }*/
-
+        wd.findElement(By.xpath("(//span[normalize-space()='Radio Button']"));
+    }
+    public void clickOnCheckBox()
+    {
+        click(By.xpath("(//li[@id='item-1'])[1]"));
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
 
 }
 
